@@ -1,4 +1,4 @@
 import os
 
 DATABASE=os.environ['DATABASE']
-HOST_DB=os.environ['HOST_DB']
+HOST_DB=os.getenv('HOST_DB', None)
